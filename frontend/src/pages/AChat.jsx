@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Spinner from '../components/Spinner';
+import './AChat.css'
 
 const AChat = () => {
     const [loading, setL] = useState(false)
