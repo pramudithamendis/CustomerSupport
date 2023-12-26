@@ -24,12 +24,12 @@ const AChat = () => {
         })
     }, [])
   return (
-    // <div className='AChat_parent'>
-    //   <div className='leftpanel'>Side</div>
-    //   <div className='rightpanel'>Content</div>
-
-    // </div>
-    <div>{s.title}</div>
+    <div className='AChat_parent'>
+      <div className='leftpanel'>Side</div>
+      <div className='rightpanel'>{s.title}</div>
+      <div className='leftpanel'>Side</div>
+    </div>
+    
 
   )
 }
