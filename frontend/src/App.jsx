@@ -1,34 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Create from './pages/Create.jsx'
+import Chats from './pages/Chats.jsx'
+import Delete from './pages/Delete.jsx'
+import AChat from './pages/AChat.jsx'
+import Edit from './pages/Edit.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route path='/chat/create' element={<Create />} />
+      <Route path='/chat/chats' element={<Chats />} />
+      <Route path='/chat/delete/:id' element={<Delete />} />
+      <Route path='/chat/getchat/:id' element={<AChat />} />
+      <Route path='/chat/edit/:id' element={<Edit />} />
+    </Routes>
   )
 }
 
