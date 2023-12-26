@@ -1,0 +1,16 @@
+.AChat_parent{
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.leftpanel{
+    background-color: yellowgreen;
+    width: 300px;
+}
+
+.rightpanel{
+    background-color: violet;
+    flex-grow: 1;
+}

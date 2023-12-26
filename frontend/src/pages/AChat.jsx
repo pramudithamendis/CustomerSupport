@@ -5,6 +5,7 @@ import Spinner from '../components/Spinner';
 import './AChat.css'
 
 const AChat = () => {
+  
     const [loading, setL] = useState(false)
     const [s, setS] = useState({});
     const {id} = useParams();
@@ -14,6 +15,7 @@ const AChat = () => {
         axios.get(`http://localhost:5555/chat/getchat/${id}`)
         .then((response)=>{
             console.log(response);
+            setS(response.data);
             setL(false)
         })
         .catch((error) => {
@@ -22,7 +24,13 @@ const AChat = () => {
         })
     }, [])
   return (
-    <div>AChat</div>
+    // <div className='AChat_parent'>
+    //   <div className='leftpanel'>Side</div>
+    //   <div className='rightpanel'>Content</div>
+
+    // </div>
+    <div>{s.title}</div>
+
   )
 }
 
