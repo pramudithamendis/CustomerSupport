@@ -56,7 +56,7 @@ const Create = () => {
             onChange={(e) => { setI(e.target.value); }
             }
           />
-           <button className='button' onClick={CreateF}
+           <button className='Create_parent_middlepanel_button' onClick={CreateF}
       >Save</button>
         
       </div>

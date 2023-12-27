@@ -34,7 +34,7 @@ const Chats = () => {
                 
                 <div className='Chats_parent'>
                     <Link className='edit' to={`/chat/create`}>
-                    <div className='leftpanel phonescreen'>
+                    <div className='Chats_parent_leftpanel phonescreen'>
                         <div>
                             <AiOutlineEdit className='' />
 
@@ -44,12 +44,12 @@ const Chats = () => {
                 </Link>
                 
                     {chats.map((s, index) => (
-                    <div className='middlepanel' key={s._id}>
+                    <div className='Chats_parent_middlepanel' key={s._id}>
                         <>
-                            <div className='title'>Title: {s.title}</div>
-                            <div className='vehicle'>Vehicle type: {s.vehicle}</div>
+                            <div className='Chats_parent_middlepanel_title'>Title: {s.title}</div>
+                            <div className='Chats_parent_middlepanel_vehicle'>Vehicle type: {s.vehicle}</div>
 
-                            <div className='Operations'>
+                            <div className='Chats_parent_middlepanel_Operations'>
                                 <Link className='edit' to={`/chat/edit/${s._id}`}>
                                     <AiOutlineEdit className='' />
                                 </Link>

@@ -3,6 +3,9 @@ import Spinner from '../components/Spinner'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import './Edit.css'
+import { Link } from 'react-router-dom';
+import { AiOutlineEdit } from 'react-icons/ai'
+import { MdOutlineDelete } from 'react-icons/md'
 
 const Edit = () => {
     const [title, setTitle] = useState('');
@@ -78,6 +81,12 @@ const [issue, setI] = useState('Good');
           />
            <button className='Edit_parent_middlepanel_button' onClick={EditF}
       >Edit</button>
+       <div className='Edit_parent_middlepanel_operations'>
+        
+        <Link className='delete' to={`/chat/delete/${id}`}>
+          <MdOutlineDelete className='' />
+        </Link>
+        </div>
         
       </div>
 

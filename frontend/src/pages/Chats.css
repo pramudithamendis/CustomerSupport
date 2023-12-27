@@ -1,5 +1,10 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(120,120,219,1) 100%);
+}
 .Chats_parent{
     /* background-color: blue; */
+    
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -8,8 +13,9 @@
     
     
 }
-.Chats_parent .leftpanel{
-    background-color: yellowgreen;
+.Chats_parent_leftpanel{
+    background-color: white;
+    color: black;
     width: 300px;
     display: flex;
  
@@ -20,11 +26,13 @@
     margin-bottom: 10px;
     margin-left: 10px;
     max-width: 300px;
+    border: 1px solid white;
+    
     
 }
 
-.Chats_parent .middlepanel{
-    background-color: violet;
+.Chats_parent_middlepanel{
+    
     /* flex-grow: 1; */
     border-radius: 20px;
     height: 150px;
@@ -32,47 +40,43 @@
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    
+    border: 1px solid white;
+    box-shadow: 10px 10px;
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);    
 }
 
-.title{
+
+
+.Chats_parent_middlepanel_title{
 margin-left: 20px;
-background-color: aqua;
+background-color: none;
+color: white;
 margin-bottom: 20px;
 margin-right: 10px;
 margin-top: 10px;
 border-radius: 20px;
 padding-left: 10px;
+
 }
 
-.vehicle{
+.Chats_parent_middlepanel_vehicle{
 margin-left: 20px;
-background-color: aqua;
+background-color: none;
+color: white;
 margin-bottom: 20px;
 margin-right: 10px;
 border-radius: 20px;
 padding-left: 10px;
 
 }
-.issue{
-margin-left: 20px;
-background-color: aqua;
-height: 300px;
-margin-right: 10px;
-border-radius: 20px;
-padding-left: 10px;
-
-}
 
 
-.Operations{
+
+.Chats_parent_middlepanel_Operations{
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
 
-.Operations .edit{
-    width: 20px;
-    height: 30px;
-
-}
