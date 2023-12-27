@@ -25,9 +25,13 @@ const AChat = () => {
     }, [])
   return (
     <div className='AChat_parent'>
-      <div className='leftpanel'>Side</div>
-      <div className='rightpanel'>{s.title}</div>
-      <div className='leftpanel'>Side</div>
+      <div className='AChat_parent_leftpanel phonescreen'>Side</div>
+      <div className='AChat_parent_middlepanel'>
+        <div className='AChat_parent_middlepanel_title'>Title: {s.title}</div>
+        <div className='AChat_parent_middlepanel_vehicle'>Vehicle type: {s.vehicle}</div>
+        <div className='AChat_parent_middlepanel_issue'>Issue: {s.issue}</div>
+      </div>
+      {/* <div className='rightpanel phonescreen'>Side</div> */}
     </div>
     
 

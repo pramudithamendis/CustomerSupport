@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Spinner from '../components/Spinner'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
+import './Edit.css'
 
 const Edit = () => {
     const [title, setTitle] = useState('');
@@ -47,20 +48,43 @@ const [issue, setI] = useState('Good');
     }
 
   return (
-    <div>Edit
+    
 
-<div >
-         
-          <input 
-            type='text'
-            value={title} 
-            onChange={(e)=> {setTitle(e.target.value);}}
+<div className='Edit_parent'>
+      <div className='Edit_parent_leftpanel phonescreen'>Side</div>
+      <div className="Edit_parent_middlepanel">
+        
+
+          <input
+            className='Edit_parent_middlepanel_title'
+            type='text' placeholder='Title of the issue'
+            value={title}
+            onChange={(e) => { setTitle(e.target.value); }
+            }
           />
-        </div>
+          <input
+            className='Edit_parent_middlepanel_vehicle'
+            type='text' placeholder='Vehicle type'
+            value={vehicle}
+            onChange={(e) => { setV(e.target.value); }
+            }
+          />
+          <input
+            className='Edit_parent_middlepanel_issue'
+            type='text' placeholder='Type your issue here'
+            value={issue}
+            onChange={(e) => { setI(e.target.value); }
+            }
+          />
+           <button className='Edit_parent_middlepanel_button' onClick={EditF}
+      >Edit</button>
+        
+      </div>
 
-    <button className='p-2 bg-sky-300 m-' onClick={EditF}
-    >Edit it!</button>
-</div>
+
+
+     
+    </div>
   )
 }
 

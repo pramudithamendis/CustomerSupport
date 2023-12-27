@@ -1,34 +1,41 @@
-.AChat_parent{
+.Chats_parent{
     /* background-color: blue; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: 10px;
+    
     
 }
-.AChat_parent_leftpanel{
+.Chats_parent .leftpanel{
     background-color: yellowgreen;
     width: 300px;
+    display: flex;
  
     border-radius: 20px;
     padding: 10px;
-    margin-right: 10px;
-}
-
-.AChat_parent_middlepanel{
-    background-color: violet;
-    /* flex-grow: 1; */
-    width: 300px;
-    border-radius: 20px;
-    height: 450px;
     justify-content: center;
-
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 300px;
     
 }
 
-.AChat_parent_middlepanel_title{
+.Chats_parent .middlepanel{
+    background-color: violet;
+    /* flex-grow: 1; */
+    border-radius: 20px;
+    height: 150px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.title{
 margin-left: 20px;
 background-color: aqua;
 margin-bottom: 20px;
@@ -38,7 +45,7 @@ border-radius: 20px;
 padding-left: 10px;
 }
 
-.AChat_parent_middlepanel_vehicle{
+.vehicle{
 margin-left: 20px;
 background-color: aqua;
 margin-bottom: 20px;
@@ -47,7 +54,7 @@ border-radius: 20px;
 padding-left: 10px;
 
 }
-.AChat_parent_middlepanel_issue{
+.issue{
 margin-left: 20px;
 background-color: aqua;
 height: 300px;
@@ -58,14 +65,14 @@ padding-left: 10px;
 }
 
 
-.rightpanel{
-    background-color: yellowgreen;
-    border-top-left-radius: 20px;
-    width: 300px;
-
-    
-
+.Operations{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 
+.Operations .edit{
+    width: 20px;
+    height: 30px;
 
-
+}
