@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai'
 import { MdOutlineDelete } from 'react-icons/md'
 import './AChat.css'
+import BackButton from '../components/BackButton';
+
 
 const AChat = () => {
 
@@ -28,7 +30,7 @@ const AChat = () => {
   }, [])
   return (
     <div className='AChat_parent'>
-      <div className='AChat_parent_leftpanel phonescreen'>Side</div>
+      <div className='AChat_parent_leftpanel phonescreen'><BackButton /></div>
       <div className='AChat_parent_middlepanel'>
         <div className='AChat_parent_middlepanel_title'>Title: {s.title}</div><hr className='AChat_parent_middlepanel_title_hr' />
         <div className='AChat_parent_middlepanel_vehicle'>Vehicle type: {s.vehicle}</div><hr className='AChat_parent_middlepanel_vehicle_hr' />

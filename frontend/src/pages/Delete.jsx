@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai'
 import { BsInfoCircle } from 'react-icons/bs'
 import { MdOutlineDelete } from 'react-icons/md'
+import BackButton from '../components/BackButton'
 
 const Delete = () => {
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,7 @@ const Delete = () => {
   }
   return (
     <div className='Delete_parent'>
-      <div className="Delete_parent_leftpanel">Side</div>
+      <div className="Delete_parent_leftpanel"><BackButton /></div>
       <div className="Delete_parent_middlepanel">
         <div className='Delete_parent_middlepanel_verify'>
           Are you sure you want to delete this?

@@ -6,6 +6,7 @@ import './Edit.css'
 import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai'
 import { MdOutlineDelete } from 'react-icons/md'
+import BackButton from '../components/BackButton'
 
 const Edit = () => {
     const [title, setTitle] = useState('');
@@ -54,7 +55,7 @@ const [issue, setI] = useState('Good');
     
 
 <div className='Edit_parent'>
-      <div className='Edit_parent_leftpanel phonescreen'>Side</div>
+      <div className='Edit_parent_leftpanel phonescreen'><BackButton /></div>
       <div className="Edit_parent_middlepanel">
         
 
